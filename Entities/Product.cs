@@ -1,3 +1,5 @@
+using System;
+
 namespace Desafio.Entities{
     class Product{
         public string Name { get; set; }

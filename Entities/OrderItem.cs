@@ -1,3 +1,5 @@
+using System;
+
 namespace Desafio.Entities{
     class OrderItem{
         public int Quantity { get; set; }
