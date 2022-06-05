@@ -22,7 +22,7 @@ namespace Desafio.Entities{
             List_orders.Remove(orderitem);
         }
         public double Total(){
-            sum = 0;
+            double sum = 0;
             foreach (var item in List_orders){
                 sum += item.SubTotal();
             }

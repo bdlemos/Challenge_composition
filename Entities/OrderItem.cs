@@ -6,14 +6,18 @@ namespace Desafio.Entities{
         public double Price { get; set; }
         public Product Product { get; set; }
         public OrderItem(){}
-        public OrderItem(string name, Product product){
-            Name = name;
-            Price = product.price;
+        public OrderItem(int quantity, Product product){
+            Price = product.Price;
             Product = product;
+            Quantity = quantity;
         }
 
         public double SubTotal(){
             return Price * Quantity;
+        }
+        public override string ToString()
+        {
+            return ($"{Product.Name}, ${Price:F2}, Quantity: {Quantity}, Subtotal: {SubTotal():F2}");
         }
     }
 }
