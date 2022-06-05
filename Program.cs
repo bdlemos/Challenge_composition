@@ -29,7 +29,7 @@ namespace Desafio{
             for (int i = 0; i < num_of_items; i++){
                 System.Console.WriteLine($"Enter #{i+1} item data:");
                 System.Console.Write("Product name: ");
-                string nameitem = Console.ReadLine();
+                string? nameitem = Console.ReadLine();
                 System.Console.Write("Product Price: ");
                 double price = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture);
                 System.Console.Write("Quantinty: ");
